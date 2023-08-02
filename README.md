@@ -15,8 +15,16 @@ The contract `FundMe` has been properly tested. Check the test folder for more i
 ## Commands
 
 - To compile or build the contracts. Use:
-  `forge compile`
-  Or `forge build`
+
+  ```
+  forge compile
+  ```
+
+  Or
+
+  ```
+  forge build
+  ```
 
 - To run a script.
   `forge script script/scriptFileName.sol`
