@@ -30,14 +30,12 @@ The contract `FundMe` has been properly tested. Check the test folder for more i
 
   ```
   forge script script/scriptFileName.sol
-
   ```
 
   - To Deploy the contract use script
 
     ```
     forge script script/DeployFundMe.sol
-
     ```
 
 - To test the contracts
@@ -67,5 +65,4 @@ The contract `FundMe` has been properly tested. Check the test folder for more i
 
   ```
   forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
-
   ```
