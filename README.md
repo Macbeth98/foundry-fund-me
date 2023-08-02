@@ -27,22 +27,45 @@ The contract `FundMe` has been properly tested. Check the test folder for more i
   ```
 
 - To run a script.
-  `forge script script/scriptFileName.sol`
+
+  ```
+  forge script script/scriptFileName.sol
+
+  ```
 
   - To Deploy the contract use script
-    `forge script script/DeployFundMe.sol`
+
+    ```
+    forge script script/DeployFundMe.sol
+
+    ```
 
 - To test the contracts
-  `forge test`
+
+  ```
+  forge test
+  ```
 
   - To run a specific test
-    `forge test --match-test testFunctionName`
+    ```
+    forge test --match-test testFunctionName
+    ```
   - To run the test on a chain
-    `forge test --fork-url <<RPC_URL>>`
+    ```
+    forge test --fork-url <<RPC_URL>>
+    ```
   - To get the coverage of Test.
-    `forge coverage`
+    ```
+    forge coverage
+    ```
   - The coverage can also be run against the fork.
-    `forge coverage --fork-rul <<RPC_URL>>`
+    ```
+    forge coverage --fork-rul <<RPC_URL>>
+    ```
 
 - To Deploy the contract on a chain and verify the contracts
-  `forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv`
+
+  ```
+  forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
+
+  ```
